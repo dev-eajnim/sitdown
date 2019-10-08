@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sit Down</title>
+    <title>Sit Down_seat</title>
     <style>
         body {
             margin: 0;
@@ -14,15 +14,16 @@
         }
 
         .box {
-            width: 300px;
+            width: 180px;
             padding: 40px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: #fffde8;
+           
             text-align: center;
         }
+
 
             .box h1 {
                 color: black;
@@ -38,15 +39,14 @@
                 text-align: center;
                 border: 2px solid #808080;
                 padding: 14px 10px;
-                width: 200px;
+                width: 150px;
                 outline: none;
                 color: black;
                 border-radius: 24px;
                 transition: 0.25s;
             }
-
                 .box input[type="text"]:focus, .box input[type="password"]:focus {
-                    width: 280px;
+                    width: 200px;
                     border-color: #808080;
                 }
 
@@ -54,7 +54,7 @@
                 border: 0;
                 background: none;
                 display: block;
-                margin: 20px auto;
+                margin: 20px auto; 
                 text-align: center;
                 border: 2px solid #ffe597;
                 padding: 14px 40px;
@@ -71,13 +71,11 @@
     </style>
 </head>
 <body>
-    <form class="box" action="{% url 'create' %}" method="post">
-        <p style="font-size:30px; color:black; font-family:'210 맨발의청춘'";>회원가입</p>
-        <input type="text" name="" placeholder="Username">
-        <input type="text" name="" placeholder="ID">
-        <input type="password" name="" placeholder="Password">
-        <input type="text" name="" placeholder="Phone number">
-        <input type="submit" name="" value="Join">
+    <img src="img/portfolio/chair.png" style="margin-left:auto; margin-right:auto; display:block;" alt="열차자리">
+    <form class="box" action="main.html" method="post">
+        <p style="font-size:30px; color:black; font-family:'210 맨발의청춘'" ;>좌석정보확인</p>
+        <input type="text" name="" placeholder="Your seat">
+        <input type="submit" name="" value="OK" onclick="alert('좌석정보 확인이 완료되었습니다.')">
     </form>
 </body>
 </html>

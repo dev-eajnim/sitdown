@@ -19,6 +19,8 @@ import hello.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', hello.views.home, name='home'),
-    path('main/', hello.views.main, name="main"),
+    path('', hello.views.home, name='main'),
+    path('create/', hello.views.create, name='create'), 
+    path('seat/',hello.views.seat, name='seat'),
+    path('sub/',hello.views.sub, name='sub'),
 ]

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -71,13 +71,41 @@
     </style>
 </head>
 <body>
-    <form class="box" action="{% url 'create' %}" method="post">
-        <p style="font-size:30px; color:black; font-family:'210 맨발의청춘'";>회원가입</p>
-        <input type="text" name="" placeholder="Username">
-        <input type="text" name="" placeholder="ID">
-        <input type="password" name="" placeholder="Password">
-        <input type="text" name="" placeholder="Phone number">
-        <input type="submit" name="" value="Join">
+    <form class="box" action="main.html" method="post">
+        <p style="font-size:30px; color:black; font-family:'210 맨발의청춘'" ;>하차 정보 입력</p>
+            노선:
+            <select name="line">
+                
+                <option value="1">1호선</option>
+                <option value="1">2호선</option>
+                <option value="1">3호선</option>
+                <option value="1">4호선</option>
+                <option value="1">8호선</option>
+                <option value="1">분당선</option>
+            </select>
+            <br> </br>
+            방향:
+            <select name="direction">
+                <option value="1">상행</option>
+                <option value="1">하행</option>
+            </select>
+            <br> </br>
+            <input type="text" name="" placeholder="현재 역 ex)복정역">
+            <input type="text" name="" placeholder="열차번호">
+            량:
+            <select name="carnum">
+                    <option value="1">1량</option>
+                    <option value="1">2량</option>
+                    <option value="1">3량</option>
+                    <option value="1">4량</option>
+                    <option value="1">5량</option>
+                    <option value="1">6량</option>
+                </select>
+                <br> </br>
+        <!-- <input type="text" name="" placeholder="열차번호"> -->
+        <!-- <input type="text" name="" placeholder="칸"> -->
+        <!-- <input type="text" name="" placeholder="하차하는 역"> -->
+        <input type="submit" name="" value="OK" onclick="alert('승차하고 있는 좌석을 선택하고 하차할 역을 입력하세요.')">
     </form>
 </body>
 </html>
