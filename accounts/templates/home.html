@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,12 +72,13 @@
     </style>
 </head>
 <body>
-    <form class="box" action="{% url 'create' %}" method="post">
+    <form class="box" action="{% url 'signup' %}" method="post">
+        {% csrf_token %}
         <p style="font-size:30px; color:black; font-family:'210 맨발의청춘'";>회원가입</p>
-        <input type="text" name="" placeholder="Username">
-        <input type="text" name="" placeholder="ID">
-        <input type="password" name="" placeholder="Password">
-        <input type="text" name="" placeholder="Phone number">
+        <input type="text" name="username" placeholder="Username">
+        <input type="text" name="ID" placeholder="ID">
+        <input type="password" name="password" placeholder="Password">
+        <input type="text" name="phone number" placeholder="Phone number">
         <input type="submit" name="" value="Join">
     </form>
 </body>
