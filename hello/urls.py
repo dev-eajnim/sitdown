@@ -19,8 +19,10 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='main'),
+    # path('', views.home, name='main'),
     path('seat/', views.seat, name='seat'),
     path('sub/', views.sub, name='sub'),
+    path('', views.login, name='login'), #name은 함수룰 뜻하는듯
+    path('signup/', views.signup, name='signup'),
  
 ]
